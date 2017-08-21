@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Disappearing Ninja</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style.css" rel="stylesheet">
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+
+    <script text='text/javascript'>
+        $(document).ready(function() {
+            // when you click, an image disappears
+            $('img').click(function() {
+                $(this).css('visibility', 'hidden');
+            });
+
+            // all images reappear!
+            $('button').click(function() {
+                $('img').css('visibility', 'visible');
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h2>JQuery - Assignment</h2>
+    <!-- row 1 -->
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+
+    <!-- row 2 -->
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+    <img class="size" src="dojocat.jpg" alt="ninja cat!">
+
+    <button>Restore</button>
+</body>
+
+</html>
